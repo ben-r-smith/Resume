@@ -1,0 +1,151 @@
+% Possible options include font size ('10pt', '11pt' and '12pt'),
+% paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper',
+% 'executivepaper' and 'landscape') and font family ('sans' and 'roman').
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% Modern themes.
+% Style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'.
+\moderncvstyle{banking}
+
+% Color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and
+% 'black'.
+\moderncvcolor{blue}
+
+% To set the default font; use '\sfdefault' for the default sans serif font,
+% '\rmdefault' for the default roman one, or any tex font name
+%\renewcommand{\familydefault}{\sfdefault}
+
+% Uncomment to suppress automatic page numbering for CVs longer than one page.
+%\nopagenumbers{}
+
+% Character encoding.
+\usepackage[utf8]{inputenc}
+
+% Adjust the page margins.
+\usepackage[scale=0.75]{geometry}
+
+% If you want to change the width of the column with the dates.
+%\setlength{\hintscolumnwidth}{3cm}
+
+\usepackage{import}
+
+% Used in the command for typesetting "C++".
+\usepackage{relsize}
+\usepackage{xspace}
+
+% Personal data.
+\name{Ben}{Smith}
+\address{1260 Republican St, Apt. 620, Seattle, WA 98109}{}{}
+\phone[mobile]{214 803 3918}
+\email{smithbr95@gmail.com}
+
+%\homepage{www.myname.webs.com}
+
+% Bibliography portions are commented out as they are not necessary for my
+% purposes.
+
+% To show numerical labels in the bibliography (default is to show no labels);
+% only useful if you make citations in your resume.
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% Consider replacing the above by this.
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+
+% Bibliography with mutiple entries.
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%-------------------------------------------------------------------------------
+%                                 Content
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+% Introductory statement.
+\small{Experienced software engineer interested in ...}
+
+\section{Experience}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{July 2013--August 2013}{Construction Site Operative}{Eurogold Groundworks and Civil Engineering}{Moston}{}{\vspace{3pt}I was responsible for the administrative duties and the tidiness and general order of the site. I worked in a safety-oriented manner, often working alongside construction plant and machinery. At the end of my work with the company my colleagues praised my work ethic.}}
+
+\vspace{6pt}
+
+\item{\cventry{2009--2011}{Waiter, Catering and Banqueting}{Lavender Best Western Park Hall Hotel}{Charnock Richard}{}{\vspace{3pt}I worked for three years as a team leader providing silver service at weddings, stag/hen nights, and business conferences. I was often trusted with other jobs such as setting up conference rooms, moving beds around the hotel, and guiding big groups of customers to their rooms. As a team leader I would delegate tasks to a team of about 5 people, often new staff who needed training, and lead the group to service. During this time I worked in a highly professional manner and was focused to provide excellent customer service, even during high stress functions and events.}}
+
+\vspace{6pt}
+
+\item{\cventry{January 2008}{Assistant Electrician}{Ryan Electricals}{Southport}{}{\vspace{3pt}I spent a week working as an assistant electrician as part of my high school work experience. My roles included wiring plugs, tidying, and assisting with household electrical repairs and fittings.}}
+
+\end{itemize}
+
+\section{Education}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+  \item{\cventry{2014--2018}{Bachelor of Science in Computer Science}
+    {Texas A\&M University}{College Station, TX}{Minor in Mathematics}
+    {University Research Scholar \\ Overall GPA: 3.38 \\ Major GPA: 3.62}}
+
+\end{itemize}
+
+\section{Technical and Personal skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\newcommand{\Rplus}{\protect\hspace{-.1em}\protect\raisebox{.35ex}{\smaller{\smaller\textbf{+}}}}
+\newcommand{\Cpp}{\mbox{C\Rplus\Rplus}\xspace}
+
+\item \textbf{Programming Languages:} \\
+  Experienced: \Cpp, C, Python \\
+  Basic understanding: Java, Haskell, JavaScript.
+
+\vspace{6pt}
+
+\item \textbf{Industry Software Skills:} SolidWorks (Advanced), Matlab (Advanced), Ansys (Intermediate),  LTspice (Intermediate), Most MS Office products including MS project and MS access (Advanced).
+
+\end{itemize}
+
+
+% Reference section is commented out because I don't need it for my purposes.
+
+%\section{References}
+%
+%\vspace{6pt}
+%
+%\begin{itemize}
+%
+%\item{Up to 4 references available on request}
+%
+%\end{itemize}
+
+% Publications from a BibTeX file without multibib for numerical labels.
+% Consider merging with preamble part.
+%\renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+
+% To redefine the heading string ("Publications"):
+%\renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}
+
+% Publications from a BibTeX file using the multibib package.
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}
+
+\end{document}
