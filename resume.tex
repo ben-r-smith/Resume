@@ -43,6 +43,8 @@
 \newcommand{\Rplus}{\protect\hspace{-.1em}\protect\raisebox{.35ex}{\smaller{\smaller\textbf{+}}}}
 \newcommand{\Cpp}{\mbox{C\Rplus\Rplus}\xspace}
 
+\newcommand{\spacing}{4pt}
+
 %\homepage{www.myname.webs.com}
 
 % Bibliography portions are commented out as they are not necessary for my
@@ -61,6 +63,12 @@
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
 
+% Remove spacing between address and contact information.
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\makehead}{\\\null}{\\}{}{}
+\makeatother
+
 %-------------------------------------------------------------------------------
 %                                 Content
 %-------------------------------------------------------------------------------
@@ -68,14 +76,32 @@
 
 \makecvtitle
 
+\addvspace{-2em}
+
 % Introductory statement.
 \small{Experienced software engineer interested in ...}
 
+\section{Education}
+
+\vspace{\spacing}
+
+\cventry{2014--2018}{Bachelor of Science in Computer Science}
+    {Texas A\&M University}{College Station, TX}{Minor in Mathematics}
+    {University Research Scholar \\ Overall GPA: 3.38 \\ Major GPA: 3.62}
+
+\section{Technical Skills}
+
+\vspace{\spacing}
+
+\textbf{Programming Languages} \\
+  Experienced: \Cpp, C, Python \\
+  Basic understanding: Java, Haskell, JavaScript
+
 \section{Experience}
 
-\vspace{6pt}
+\vspace{\spacing}
 
-\cventry{August 2018--present}
+\cventry{August 2018 -- present}
   {Sofware Development Engineer - Alexa Voice Services}{Amazon}{Seattle, WA}{}
     {\vspace{3pt}
     \begin{itemize}
@@ -86,9 +112,9 @@
     \end{itemize}
     }
 
-\vspace{6pt}
+\vspace{\spacing}
 
-\cventry{November 2015--December 2017}{Undergraduate Research Assistant}
+\cventry{November 2015 -- December 2017}{Undergraduate Research Assistant}
   {Texas A\&M University Department of Computer Science}
     {College Station, TX}{}{\vspace{3pt}
     \begin{itemize}
@@ -101,9 +127,9 @@
     \end{itemize}
     }
 
-\vspace{6pt}
+\vspace{\spacing}
 
-\cventry{June 2016--August 2016}{Information Technology Intern}
+\cventry{June 2016 -- August 2016}{Information Technology Intern}
   {Alliance Data Systems}{Plano, TX}{}{\vspace{3pt}
     \begin{itemize}
       \setlength{\itemindent}{1em}
@@ -113,21 +139,25 @@
     \end{itemize}
     }
 
-\section{Education}
+\section{Activities and Leadership}
 
-\vspace{6pt}
+\vspace{\spacing}
 
-\cventry{2014--2018}{Bachelor of Science in Computer Science}
-    {Texas A\&M University}{College Station, TX}{Minor in Mathematics}
-    {University Research Scholar \\ Overall GPA: 3.38 \\ Major GPA: 3.62}
+\addvspace{-1em}
 
-\section{Technical and Personal skills}
+\cventry{2014 -- 2018}{{\normalfont Theta Tau professional engineering fraternity,
+Texas A\&M University}}{}{}{}{}
 
-\vspace{6pt}
+\addvspace{-1.25em}
 
-\textbf{Programming Languages:} \\
-  Experienced: \Cpp, C, Python \\
-  Basic understanding: Java, Haskell, JavaScript.
+\cventry{2016}{{\normalfont Webmaster for Theta Tau}}{}{}{}{}
+
+\addvspace{-1.25em}
+
+\cventry{2015, 2016, 2017}{{\normalfont The Big Event, Texas A\&M University
+community service event}}{}{}{}{}
+
+
 
 % Reference section is commented out because I don't need it for my purposes.
 
