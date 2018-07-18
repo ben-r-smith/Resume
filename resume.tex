@@ -33,17 +33,23 @@
 \usepackage{relsize}
 \usepackage{xspace}
 
-% Personal data.
-\name{Ben}{Smith}
-\address{1260 Republican St, Apt. 620, Seattle, WA 98109}{}{}
-\phone[mobile]{214 803 3918}
-\email{smithbr95@gmail.com}
+% LinkedIn symbol.
+\usepackage{fontawesome}
+
+\newcommand{\linkedin}[1]{\faLinkedinSquare #1}
 
 % Command for formatting 'C++'.
 \newcommand{\Rplus}{\protect\hspace{-.1em}\protect\raisebox{.35ex}{\smaller{\smaller\textbf{+}}}}
 \newcommand{\Cpp}{\mbox{C\Rplus\Rplus}\xspace}
 
 \newcommand{\spacing}{4pt}
+
+% Personal data.
+\name{Ben}{Smith}
+\address{1260 Republican St, Apt. 620, Seattle, WA 98109}{}{}
+\phone[mobile]{214 803 3918}
+\email{smithbr95@gmail.com}
+\extrainfo{\faLinkedinSquare \hspace{.05em} linkedin.com/in/ben-r-smith}
 
 %\homepage{www.myname.webs.com}
 
