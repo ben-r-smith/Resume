@@ -75,6 +75,10 @@
 \patchcmd{\makehead}{\\\null}{\\}{}{}
 \makeatother
 
+% Multicolumn package
+\usepackage{multicol}
+\setlength\columnsep{10pt}
+
 %-------------------------------------------------------------------------------
 %                                 Content
 %-------------------------------------------------------------------------------
@@ -82,10 +86,10 @@
 
 \makecvtitle
 
-\addvspace{-2em}
+\vspace{-1em}
 
 % Introductory statement.
-\small{Experienced software engineer interested in ...}
+%\small{Experienced software engineer interested in ...}
 
 \section{Education}
 
@@ -94,14 +98,6 @@
 \cventry{2014--2018}{Bachelor of Science in Computer Science}
     {Texas A\&M University}{College Station, TX}{Minor in Mathematics}
     {University Research Scholar \\ Overall GPA: 3.38 \\ Major GPA: 3.62}
-
-\section{Technical Skills}
-
-\vspace{\spacing}
-
-\textbf{Programming Languages} \\
-  Experienced: \Cpp, C, Python \\
-  Basic understanding: Java, Haskell, JavaScript
 
 \section{Experience}
 
@@ -112,9 +108,9 @@
     {\vspace{3pt}
     \begin{itemize}
       \setlength{\itemindent}{1em}
-      \item My responsibilities
-      \item spanning
-      \item multiple bullets
+      \item Develop Android applications that enable Alexa on third-party multimodal devices
+      \item Launch Alexa enabled devcies such as the Lenovo Smart Tab to millions of customers
+      \item Work with teams across the globe to deliver experiences that fit the customers' needs
     \end{itemize}
     }
 
@@ -126,7 +122,7 @@
     \begin{itemize}
       \setlength{\itemindent}{1em}
       \item Research in robotic motion planning
-      \item Develop and maintain \Cpp motion planning library, PMPL
+      \item Develop and maintain \Cpp motion planning library
       \item Published undergraduate thesis on kinodynamic motion planning
       \item Coauthor on paper exploring topological Nearest-Neighbor filtering
       \item Website: https://parasol.tamu.edu/~ben0815
@@ -144,6 +140,24 @@
       \item Collaborated with the information security team on test findings
     \end{itemize}
     }
+
+\section{Technical Skills}
+
+\vspace{-.75em}
+
+\begin{multicols}{2}
+\noindent
+
+\textbf{Programming Languages} \\
+  Experienced: Java, \Cpp, C \\
+  Familiar: Python, Haskell, JavaScript
+
+\textbf{Operating Systems} \\
+  Experienced: Android
+
+\end{multicols}
+
+\vspace{-1.5em}
 
 \section{Activities and Leadership}
 
