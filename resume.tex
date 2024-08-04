@@ -7,10 +7,6 @@
 % Style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'.
 \moderncvstyle{banking}
 
-% Color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and
-% 'black'.
-\moderncvcolor{blue}
-
 % To set the default font; use '\sfdefault' for the default sans serif font,
 % '\rmdefault' for the default roman one, or any tex font name
 %\renewcommand{\familydefault}{\sfdefault}
@@ -33,10 +29,21 @@
 \usepackage{relsize}
 \usepackage{xspace}
 
-% LinkedIn symbol.
-\usepackage{fontawesome}
+% Fonts
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 
-\newcommand{\linkedin}[1]{\faLinkedinSquare #1}
+% LinkedIn symbol.
+\usepackage{fontawesome5}
+
+\newcommand{\linkedin}[1]{\faLinkedin #1}
+
+% Color definitions and overrides.
+\definecolor{color1}{rgb}{0 .48 .65}
+\colorlet{firstnamecolor}{color1}
+\colorlet{lastnamecolor}{color1}
+\colorlet{sectioncolor}{color1}
+\colorlet{bodyrulecolor}{color1}
 
 % Command for formatting 'C++'.
 \newcommand{\Rplus}{\protect\hspace{-.1em}\protect\raisebox{.35ex}{\smaller{\smaller\textbf{+}}}}
@@ -46,10 +53,10 @@
 
 % Personal data.
 \name{Ben}{Smith}
-\address{1260 Republican St, Seattle, WA 98109}{}{}
+\address{Seattle, Washington}{}{}
 \phone[mobile]{214 803 3918}
 \email{smithbr95@gmail.com}
-\extrainfo{\faLinkedinSquare \hspace{.05em} linkedin.com/in/ben-r-smith}
+\extrainfo{\linkedin \hspace{.05em} linkedin.com/in/ben-r-smith}
 
 %\homepage{www.myname.webs.com}
 
@@ -107,13 +114,11 @@
   {Software Development Engineer II - Amazon One}{Amazon}{Seattle, WA}{}
     {\vspace{3pt}
     \begin{itemize}
-      \setlength{\itemindent}{1em}
-      \item Develop Android applications and related on-device software to enable all Amazon One workflows
-      \item Use OpenCV with neural network outputs for on-device filters when
-        scanning a palm
-      \item Launch Amazon One devices in Amazon Go and other stores
-      \item Work with teams across the globe to deliver a unique shopping
-        experience
+      \item Lead a team developing a variety of Android application and embedded device software
+      \item Built core device software powering the Amazon One biometric recognition system
+      \item Leveraged bespoke machine learning models and OpenCV to identify customer palms against hundreds of thousands of enrolled users
+      \item Designed and built software to process critical data in isolated hardware environments to maintain the highest security controls possible
+      \item Launched 10,000+ Amazon One devices in the U.S. and other countries
     \end{itemize}
     }
 
@@ -123,12 +128,10 @@
   {Texas A\&M University Department of Computer Science}
     {College Station, TX}{}{\vspace{3pt}
     \begin{itemize}
-      \setlength{\itemindent}{1em}
       \item Research in robotic motion planning
       \item Develop and maintain \Cpp motion planning library
       \item Published undergraduate thesis on kinodynamic motion planning
       \item Coauthor on paper exploring topological Nearest-Neighbor filtering
-      \item Website: https://parasol.tamu.edu/\textasciitilde ben0815
     \end{itemize}
     }
 
@@ -137,7 +140,6 @@
 \cventry{June 2016 -- August 2016}{Information Technology Intern}
   {Alliance Data Systems}{Plano, TX}{}{\vspace{3pt}
     \begin{itemize}
-      \setlength{\itemindent}{1em}
       \item Cloud computing transition project - lead security research group
       \item Responsible for testing and reporting on various IT controls
       \item Collaborated with the information security team on test findings
@@ -152,8 +154,8 @@
 \noindent
 
 \textbf{Programming Languages} \\
-  Experienced: Java \\
-  Familiar: \Cpp, C, Python, Haskell, JavaScript
+  Experienced: Java, Kotlin \\
+  Familiar: \Cpp, C, Python, TypeScript
 
 \textbf{Operating Systems and Platforms} \\
   Experienced: Android/AOSP
@@ -168,19 +170,10 @@
 
 \addvspace{-1em}
 
+\cventry{2022 -- 2023}{{\normalfont Technical Academy Teaching Assistant, Amazon}}{}{}{}{}
+
 \cventry{2014 -- 2018}{{\normalfont Theta Tau professional engineering fraternity,
 Texas A\&M University}}{}{}{}{}
-
-\addvspace{-1.25em}
-
-\cventry{2016}{{\normalfont Webmaster for Theta Tau}}{}{}{}{}
-
-\addvspace{-1.25em}
-
-\cventry{2015, 2016, 2017}{{\normalfont The Big Event, Texas A\&M University
-community service event}}{}{}{}{}
-
-
 
 % Reference section is commented out because I don't need it for my purposes.
 
